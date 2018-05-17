@@ -8,12 +8,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,500" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,400" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
     <div class="wrap">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
           <a class="navbar-brand" href="#">Daniel Joyce</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -21,13 +23,13 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item active">
-                <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
+                <a class="nav-link" id="nav-about"href="#about">About<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link"id="nav-projects" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" id="nav-contact"href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -48,22 +50,20 @@
       <div id="about" class="about container">
       <h1>About me</h1>
       <div class="row">
-          <div class="col-sm">
-            <img class="img-fluid profile-picture" src="./assets/img/placeholder.jpg">
-          </div>
-          <div class="col-sm about-text">
-            <p>Throughout life, I have always enjoyed solving logic and design problems.  
-              I strive to be the very best that I can be through hard work, dedication and love for what I do.
-            </p>
-            <p>
-              I have a 2:1 honours degree in Applied Computing (Bsc Hons) from the University of Dundee. 
-              I am also a STEM ambassador for youths in Scotland and I also hold multiple coaching certifications.
-            </p>
-            <p>
-              Currently, I work as a software tester at Hyman Robertson mostly doing API and automation testing.
-            </p>
-            <p>My ambition is to make the jump from being a software tester to becoming a developer.</p>
-          </div>
+            <div class="col-sm about-text">
+              <p>Throughout life, I have always enjoyed solving logic and design problems.  
+                I strive to be the very best that I can be through hard work, dedication and love for what I do.
+              </p>
+              <p>
+                I have a 2:1 honours degree in Applied Computing (Bsc Hons) from the University of Dundee. 
+                I am also a STEM ambassador for youths in Scotland and I also hold multiple coaching certifications.
+              </p>
+              <p>
+                Currently, I work as a software tester at Hymans Robertson mostly doing API and automation testing.
+              </p>
+              <p>My ambition is to make the jump from being a software tester to becoming a developer.</p>
+            </div>
+        </div>
       </div>
     </div>
     <section id="projects">
@@ -102,7 +102,7 @@
         <div class="row">
             <div class="col">
                 <div class="card">
-                    <img class="card-img-top" src="./assets/img/SimonSays.png" alt="Calculator - Javascript & JQuery">
+                    <img class="card-img-top phone-image" src="./assets/img/phone-calculator.png" alt="Calculator - Javascript & JQuery">
                     <div class="overlay">
                       <h4>Calculator<br/>Javascript & JQuery</h4>
                       <a href="https://github.com/DanielAJoyce/JavascriptCalculator-JQuery" target="_blank"><i class="card-link-icon fab fa-github"></i></a></div> 
@@ -114,13 +114,13 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <img class="card-img-top" src="./assets/img/SimonSays.png" alt="C# & Unity - Shooting Game">
+                    <img class="card-img-top phone-image" src="./assets/img/phone-game.png" alt="C# & Unity - Shooting Game">
                     <div class="overlay">
-                      <h4>Top-Down Shoot'em up <br/>C# and Unity</h4>
-                      <a href="https://github.com/DanielAJoyce/Brad-Furness-Unity-Game-Shoot-Em-Up-" target="_blank"><i class="card-link-icon fab fa-github"></i></a></div> 
+                      <h4>Mobile Match Game<br/>C# and Unity</h4>
+                      <a href="https://github.com/DanielAJoyce/MatchyMatch" target="_blank"><i class="card-link-icon fab fa-github"></i></a></div> 
                     <div class="card-body">
-                      <h5 class="card-title"><i class="language-icon fas fa-gamepad"></i>C# and Unity Shoot'em up</h5>
-                      <p class="card-text">Made during my final year at university when studying game design and programming. Features object pooling, procedural generation and loads of fun! Inspired by "Trevor McFur in the Crescent Galaxy" & "Galaga"</p>
+                      <h5 class="card-title"><i class="language-icon fas fa-gamepad"></i>C# and Unity Mobile Matching Game</h5>
+                      <p class="card-text">Made during my final year at university when studying programming and game design.</p>
                     </div>
                   </div>
             </div>
@@ -132,8 +132,9 @@
       <div class="container-fluid">
         <h1>Contact</h1>
         <div>
-          <h4>If you are interested in contacting me, my details are:</h4><br/>
-          <h4><strong>Email</strong>: DanielAlexanderJoyce@gmail.com</h4>
+          <p>If you are interested in contacting me, my details are:</p>
+          <p><strong>Email</strong>: DanielAlexanderJoyce@gmail.com</p>
+          <p><strong>Phone Number:</strong>07412201391</p>
         </div>
       </div>
     </section>
